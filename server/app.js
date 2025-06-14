@@ -6,7 +6,7 @@ import authRoutes from "./Routers/authRoute.js"
 import usersRoutes from "./Routers/usersRoute.js"
 import postsRoutes from "./Routers/postsRoute.js"
 import commentRoutes from "./Routers/commentRoute.js"
-
+import categoryRoutes from "./Routers/caregoryRoute.js"
 
 dotenv.config();
 
@@ -26,6 +26,7 @@ app.use(express.json())
 app.use("/api/auth",authRoutes)
 app.use("/api/users",usersRoutes)
 app.use("/api",postsRoutes)
+app.use("/api/category",categoryRoutes)
 
 app.use("/api",commentRoutes)
 
