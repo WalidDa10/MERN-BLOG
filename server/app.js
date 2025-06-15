@@ -7,6 +7,7 @@ import usersRoutes from "./Routers/usersRoute.js"
 import postsRoutes from "./Routers/postsRoute.js"
 import commentRoutes from "./Routers/commentRoute.js"
 import categoryRoutes from "./Routers/caregoryRoute.js"
+import { ErrorHandlerMidl, NotFound } from "./middlewares/errorHandler.js";
 
 dotenv.config();
 
@@ -27,8 +28,12 @@ app.use("/api/auth",authRoutes)
 app.use("/api/users",usersRoutes)
 app.use("/api",postsRoutes)
 app.use("/api/category",categoryRoutes)
-
 app.use("/api",commentRoutes)
+
+// Error Handler Middleware
+app.use(NotFound)
+app.use(ErrorHandlerMidl)
+
 
 const Port = process.env.PORT || 2020
 
