@@ -1,9 +1,9 @@
 import "./posts-page.css";
-import { posts } from "../../dummyData";
+import { posts , categories } from "../../dummyData";
 import { useEffect } from "react";
-import PostList from "../../components/posts/PostList";
-//import Sidebar from "../../components/sidebar/Sidebar";
-//import Pagination from "../../components/pagination/Pagination";
+import PostList from "../../components/posts/PostList"; 
+import Sidebar from "../../components/sidebar/Sidebar";
+import Pagination from "../../components/pagintaion/Pagination";
 
 const PostsPage = () => {
   useEffect(() => {
@@ -14,9 +14,9 @@ const PostsPage = () => {
     <>
       <section className="posts-page">
         <PostList posts={posts} />
-        {/* <Sidebar /> */}
+        <Sidebar categories ={categories} />
       </section>
-      {/* <Pagination /> */}
+      <Pagination />
     </>
   );
 };
