@@ -8,6 +8,7 @@ import postsRoutes from "./Routers/postsRoute.js"
 import commentRoutes from "./Routers/commentRoute.js"
 import categoryRoutes from "./Routers/caregoryRoute.js"
 import { ErrorHandlerMidl, NotFound } from "./middlewares/errorHandler.js";
+import cors from 'cors'
 
 dotenv.config();
 
@@ -19,9 +20,17 @@ const app = express();
 //Connetion to DB
 ConnectToDB()
 
+
+
+// Cors Policy
+app.use(cors({
+    origin: "http://localhost:3000",
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    // credentials: true
+}))
+
 //Middlawers
 app.use(express.json())
-
 
 // Routes
 app.use("/api/auth",authRoutes)

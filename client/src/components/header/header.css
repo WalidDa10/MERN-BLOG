@@ -78,6 +78,27 @@
     margin-right: 5px;
 }
 
+.header-right-user-info{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-right-username{
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-right: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.header-right-user-photo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /* Media Queries */
 @media (max-width: 990px) {
     .header-left {

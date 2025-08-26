@@ -55,14 +55,16 @@ export const RigsterUserCtrl = asyncHandler(async (req, res) => {
     // Generate Auth token Using JWT
     const token = jwt.sign({id: DBUser._id , isAdmin: DBUser.isAdmin}, process.env.SECRET_KEY)
     //res.cookie('token',token,{httpOnly: true})
-
+    
+    
     // @TODO -sending email(verify account if not verified )
     res.status(200).json({
         message:"You login successfully",
         _id: DBUser._id,
         isAdmin: DBUser.isAdmin,
         profilePhoto: DBUser.profilPhoto,
-        token
+        token,
+        user: DBUser.username
         })
    
 
