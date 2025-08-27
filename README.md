@@ -1,38 +1,42 @@
 # MERN-BLOG
-A Personal BLOG Using MERN Technologies, 
+A Personal BLOG Using MERN Technologies, This project is based on a YouTube tutorial https://www.youtube.com/playlist?list=PL5gCk5NdNx58jcohY_gnMR2WI1Lhl2uNK.
 
+ ## 🛠️ Tools & Setup:
+### Prerequisites
+Environment Setup
 
-![](public/img/screenshot.png)
+Install Node.js (v18+ recommended).
 
-![](public/img/Screenshot_2.png)
+Initialize Express.js for the server (npm install express).
 
+### Database
+Run MongoDB locally via Docker (recommended).
+Guide to installing Docker and running MongoDB locally in your device: https://www.youtube.com/watch?v=TsNUchjn-uI&t=285s
 
 
 ## Features ✨
 
-- **User Authentication**  
-  Secure admin login for post management
-- **CRUD Operations**  
-  Create, Read, Update, and Delete blog posts
+- **Authentication**  
+   admin and users login 
+- **Operations**  
+  Create, Read, Update, Delete,Filter and more... 
 - **Responsive Design**  
   Mobile-friendly UI with clean typography
 - **Modern Dashboard**  
-  Admin panel with post statistics and management
+  Admin dashboard to manage the Posts, Users, Categories, Comments
+- **Middlewares** 
+ middleware for errorHandler
+ middleware for photo Update
+ middlware for verify Token
+- **Controllers and Routes**  
+ All needed controllers and Routes for models: Authentication, Posts, Users, Comments, Catogry   
 - **Search Functionality**  
-  Find posts by keywords or tags
-
-## Tech Stack 🛠️
-
-| Component       | Technology |
-|-----------------|------------|
-| Frontend        | HTML5, CSS3, JavaScript, EJS |
-| Backend         | Node.js, Express.js |
-| Database        | MongoDB (or your DB) |
-| Authentication  | Passport.js (or your solution) |
+  
 
 ## Installation 💻
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/WalidDa10/My-Personal-Blog.git
+   git clone https://github.com/WalidDa10/MERN-BLOG.git
+## RUN
 
