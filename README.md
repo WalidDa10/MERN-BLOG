@@ -7,8 +7,9 @@ Environment Setup
 
 Install Node.js (v18+ recommended).
 
-Initialize Express.js for the server (npm install express).
+Initialize Express.js for the server and the frontend (npm install express).
 
+Create Cloudinary account for storing the images
 ### Database
 Run MongoDB locally via Docker (recommended).
 Guide to installing Docker and running MongoDB locally in your device: https://www.youtube.com/watch?v=TsNUchjn-uI&t=285s
@@ -30,7 +31,7 @@ Guide to installing Docker and running MongoDB locally in your device: https://w
  middlware for verify Token
 - **Controllers and Routes**  
  All needed controllers and Routes for models: Authentication, Posts, Users, Comments, Catogry   
-- **Search Functionality**  
+ 
   
 
 ## Installation 💻
@@ -39,4 +40,13 @@ Guide to installing Docker and running MongoDB locally in your device: https://w
    ```bash
    git clone https://github.com/WalidDa10/MERN-BLOG.git
 ## RUN
+    for the backend folder
+    ```bash
+    cd backend
+    npm run dev
+    
+    for the frontend folder
+    ```bash
+    cd client
+    npm start
 
