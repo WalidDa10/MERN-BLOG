@@ -40,12 +40,12 @@ Guide to installing Docker and running MongoDB locally in your device: https://w
    ```bash
    git clone https://github.com/WalidDa10/MERN-BLOG.git
 ## RUN
-    for the backend folder
+.  **for the backend folder**
     ```bash
     cd backend
     npm run dev
     
-    for the frontend folder
+.  **for the frontend folder**
     ```bash
     cd client
     npm start
