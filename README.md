@@ -29,10 +29,20 @@ Guide to installing Docker and running MongoDB locally in your device: https://w
   Admin dashboard to manage the Posts, Users, Categories, Comments
 - **Middlewares** 
   middleware for errorHandler
+  
   middleware for photo Update
+  
   middleware for verifying the Token
+  
 - **Controllers and Routes**  
- All needed controllers and Routes for models: Authentication, Posts, Users, Comments, Category   
+ All needed controllers and Routes for models: Authentication, Posts, Users, Comments, Category
+
+- **Validation**
+- Validate Create Post
+- Validate Update Post
+- Validate Register User
+- Validate Login User
+ 
  
   
 
