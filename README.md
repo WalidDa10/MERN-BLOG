@@ -18,7 +18,8 @@ Guide to installing Docker and running MongoDB locally in your device: https://w
 ## Features ✨
 
 - **Authentication**  
-   admin and users login 
+   admin and users login
+   JWT generation/validation for secure endpoints
 - **Operations**  
   Create, Read, Update, Delete,Filter and more... 
 - **Responsive Design**  
