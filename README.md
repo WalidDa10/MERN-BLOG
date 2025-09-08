@@ -34,14 +34,16 @@ Guide to installing Docker and running MongoDB locally in your device: https://w
   
   middleware for verifying the Token
   
+  Not found middleware
+  
 - **Controllers and Routes**  
  All needed controllers and Routes for models: Authentication, Posts, Users, Comments, Category
 
 - **Validation**
-- Validate Create Post
-- Validate Update Post
-- Validate Register User
-- Validate Login User
+  Validate Create Post
+  Validate Update Post
+  Validate Register User
+  Validate Login User
  
  
   
