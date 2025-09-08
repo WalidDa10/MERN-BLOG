@@ -41,8 +41,11 @@ Guide to installing Docker and running MongoDB locally in your device: https://w
 
 - **Validation**
   Validate Create Post
+  
   Validate Update Post
+  
   Validate Register User
+  
   Validate Login User
  
  
