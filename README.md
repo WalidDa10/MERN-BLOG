@@ -40,6 +40,7 @@ Guide to installing Docker and running MongoDB locally in your device: https://w
  All needed controllers and Routes for models: Authentication, Posts, Users, Comments, Category
 
 - **Validation**
+  
   Validate Create Post
   
   Validate Update Post
