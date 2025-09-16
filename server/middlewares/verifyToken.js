@@ -46,7 +46,7 @@ export const verifyOnlyUser = asyncHandler( async (req , res , next) => {
 } )
 
 
-// verfiy token & Authorization 
+// verfiy token & Authorization //  Admin or Himself 
 export const verifyTokenAndAuthorization = asyncHandler( async (req , res , next) => {
     verifyMiddleare(req , res ,()=>{
         if (req.user.isAdmin || req.user.id === req.params.id  ){
